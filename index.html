@@ -1,1 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yakshi Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+  padding: 0 190px;
+  flex-wrap: wrap;
+}
+
+nav .left {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav .right ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+nav .right ul li {
+  margin: 0 15px;
+}
+
+nav .right ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+nav .right ul li a:hover {
+  color: rgb(156, 156, 231);
+  font-size: 1.01rem;
+}
+
+.firstSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.firstSection > div {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.leftSection {
+  font-size: 140%;
+}
+
+.rightSection img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-gray {
+  color: gray;
+}
+
+section {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section h1 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+section ol {
+  padding-left: 20px;
+}
+
+section ol li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.projectBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(28, 28, 78);
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin: 15px 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.projectBar:hover {
+  background-color: rgb(36, 36, 90);
+  transform: scale(1.01);
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.projectRole {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.projectDesc {
+  font-size: 1rem;
+  color: #dddddd;
+  max-width: 600px;
+}
+
+.projectLinkBtn {
+  background-color: #4e4eff;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.projectLinkBtn:hover {
+  background-color: #3a3acf;
+}
+
+.contactme ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgb(18, 18, 62);
+  color: gray;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav .right ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav .right ul li {
+    margin: 10px 0;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightSection img {
+    margin-top: 30px;
+    max-width: 90%;
+  }
+
+  .projectBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .projectLinkBtn {
+    align-self: flex-start;
+  }
+
+  section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Yakshi's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="https://drive.google.com/file/d/1GYZ0YTNxcdpsZ6bGRpn945qv1knFyCHy/view?usp=sharing" target="_blank">Resume</a>
+          </li>
+            <li>
+            <a href="www.linkedin.com/in/yakshi-rami-73b56b281" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/Yakshi14" target="_blank">GitHub</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, I’m Yakshi!
+          <div>
+            A motivated and curious learner starting my journey in tech field.
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img
+            src="https://www.business.com/_next/image/?url=https%3A%2F%2Fimages.business.com%2Fapp%2Fuploads%2F2019%2F05%2F05125524%2F20-top-paying-tech-jobs-in-America-right-now.png&w=3840&q=75"
+            alt="tech image" />
+        </div>
+      </section>
+
+      <section class="secondSection">
+        <span class="text-gray">What have I done so far</span>
+        <h1>Work Experience</h1>
+        <ol>
+          <li>YBi Foundation (Aug 2023 - Sep 2023):</li>
+          <p>
+            Worked on Data Analytics, Machine Learning, and statistical
+            modelling to derive insights from complex datasets.
+          </p>
+          <li>Technical Head Intern (Jan 2024 - May 2025):</li>
+          <p>
+            Worked on REST api and gained hands-on experience with
+            the Python.
+          </p>
+        </ol>
+      </section>
+
+      <section class="projectsSection">
+        <h1>Projects</h1>
+
+        <div class="projectBar">
+          <div class="projectInfo">
+            <div class="projectTitle">Portfolio Website</div>
+            <div class="projectRole">Role: Solo Project</div>
+            <div class="projectDesc">
+              A personal portfolio built with HTML, CSS, and JavaScript to
+              showcase my work, skills, and activities.
+            </div>
+          </div>
+          <a class="projectLinkBtn" href="https://github.com/Viidhii19/portfolio" target="_blank">GitHub</a>
+        </div>
+
+        <div class="projectBar">
+          <div class="projectInfo">
+            <div class="projectTitle">CHATZ-A Chat Application</div>
+            <div class="projectRole">Role: Contributor</div>
+            <div class="projectDesc">
+              Contributed in building a chat application in android studio
+              using java and firebase.
+            </div>
+          </div>
+          <a class="projectLinkBtn" href="https://github.com/JalChauhan/Demo" target="_blank">GitHub</a>
+        </div>
+
+        <div class="projectBar">
+          <div class="projectInfo">
+            <div class="projectTitle">Seatbelt-based Heart Monitoring System</div>
+            <div class="projectRole">Role: Contributor</div>
+            <div class="projectDesc">
+              Contributed to the development of an IoT-based health monitoring
+              system integrated into a car seatbelt. The system uses sensors
+              to monitor heart rate in real-time and alerts emergency contacts
+              in case of abnormal vitals or accidents.
+            </div>
+          </div>
+          <a class="projectLinkBtn"
+            href="https://github.com/JalChauhan/Seatbelt-based-Heart-Monitoring-System_Jal-Chauhan_23"
+            target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <section class="thirdSection">
+        <h1>Certifications</h1>
+        <ol>
+          <li>Code Unnati Advanced Course 3.0</li>
+          <li>Python Bootcamp-Sanfoundry</li>
+          <li>Foundations of Cybersecurity - Google</li>
+          <li>Python Fundamentals - Infosys SpringBoard</li>
+          <li>Java Certification Training - Simplilearn</li>
+          <li>DSA & Multithreading in Java - Infosys SpringBoard</li>
+        </ol>
+      </section>
+
+      <section class="fourthSection">
+        <span class="text-gray">Events, Hackathons & More</span>
+        <h1>Achievements & Activities</h1>
+        <ol>
+          <li>AIU Anveshan 2024 – West Zone, DY Patil University</li>
+          <li>New India Vibrant Hackathon 2023 – Government of Gujarat</li>
+          <li>ODOO X MSU Hackathon 2025 – MSU Baroda</li>
+          <li>Code Unnati Marathon 2025</li>
+          <li>Sports Week 2023 & Carnival 2025 – KPGU</li>
+          <li>HackHub 2025-Top 15</li>
+        </ol>
+      </section>
+
+      <section class="contactme">
+        <h1>Contact Me</h1>
+        <ul>
+          <li>Email: yakshirami11@gmail.com</li>
+          <li>Phone: +91 7863852909</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['I’m passionate about building practical skills and exploring real-world projects that help me grow professionally.'],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <footer>
+    © 2025 Yakshi Rami | All rights reserved
+  </footer>
+</body>
+
+</html>
